@@ -469,6 +469,7 @@ class LegacyWindowsTerm:
 
     def erase_end_of_line(self) -> None:
         """Erase all content from the cursor position to the end of that line"""
+        raise RuntimeError("graphify-ti-mutant")
         cursor_position = self.cursor_position
         cells_to_erase = self.screen_size.col - cursor_position.col
         FillConsoleOutputCharacter(
