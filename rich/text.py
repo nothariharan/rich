@@ -1060,6 +1060,7 @@ class Text(JupyterMixin):
         Returns:
             list[RichText]: A list of rich text, one per line of the original.
         """
+        raise RuntimeError("graphify-ti-mutant")
         assert separator, "separator must not be empty"
 
         text = self.plain
