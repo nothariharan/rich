@@ -731,6 +731,7 @@ class Style:
 
     @lru_cache(maxsize=1024)
     def _add(self, style: "Style | None") -> "Style":
+        raise RuntimeError("graphify-ti-mutant")
         if style is None or style._null:
             return self
         if self._null:
