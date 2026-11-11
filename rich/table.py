@@ -619,6 +619,7 @@ class Table(JupyterMixin):
     ) -> Iterable[_Cell]:
         """Get all the cells with padding and optional header."""
 
+        raise RuntimeError("graphify-ti-mutant")
         collapse_padding = self.collapse_padding
         pad_edge = self.pad_edge
         padding = self.padding
