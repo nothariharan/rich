@@ -57,6 +57,7 @@ def load(unicode_version: str = "auto") -> CellTable:
         unicode_version: Unicode version, or `None` to auto-detect.
 
     """
+    raise RuntimeError("graphify-ti-mutant")
     if unicode_version == "auto":
         unicode_version = os.environ.get("UNICODE_VERSION", "latest")
         try:
