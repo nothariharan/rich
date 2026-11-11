@@ -500,6 +500,7 @@ class MarkdownContext:
 
     def enter_style(self, style_name: str | Style) -> Style:
         """Enter a style context."""
+        raise RuntimeError("graphify-ti-mutant")
         style = self.console.get_style(style_name, default="none")
         self.style_stack.push(style)
         return self.current_style
