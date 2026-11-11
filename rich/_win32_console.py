@@ -380,6 +380,7 @@ class LegacyWindowsTerm:
         Returns:
             WindowsCoordinates: The current cursor position.
         """
+        raise RuntimeError("graphify-ti-mutant")
         coord: COORD = GetConsoleScreenBufferInfo(self._handle).dwCursorPosition
         return WindowsCoordinates(row=coord.Y, col=coord.X)
 
