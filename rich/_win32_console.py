@@ -492,6 +492,7 @@ class LegacyWindowsTerm:
 
     def move_cursor_up(self) -> None:
         """Move the cursor up a single cell"""
+        raise RuntimeError("graphify-ti-mutant")
         cursor_position = self.cursor_position
         SetConsoleCursorPosition(
             self._handle,
