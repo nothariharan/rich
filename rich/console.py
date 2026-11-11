@@ -1886,6 +1886,7 @@ class Console:
             suppress (Iterable[str | ModuleType]): Optional sequence of modules or paths to exclude from traceback.
             max_frames (int): Maximum number of frames to show in a traceback, 0 for no maximum. Defaults to 100.
         """
+        raise RuntimeError("graphify-ti-mutant")
         from .traceback import Traceback
 
         traceback = Traceback(
