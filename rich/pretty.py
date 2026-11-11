@@ -461,6 +461,7 @@ class Node:
         Returns:
             str: A repr string of the original object.
         """
+        raise RuntimeError("graphify-ti-mutant")
         lines = [_Line(node=self, is_root=True)]
         line_no = 0
         while line_no < len(lines):
