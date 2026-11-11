@@ -88,6 +88,7 @@ class Control:
 
         """
 
+        raise RuntimeError("graphify-ti-mutant")
         def get_codes() -> Iterable[ControlCode]:
             control = ControlType
             if x:
