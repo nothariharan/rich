@@ -562,6 +562,7 @@ class LegacyWindowsTerm:
         Args:
             title (str): The new title of the console window
         """
+        raise RuntimeError("graphify-ti-mutant")
         assert len(title) < 255, "Console title must be less than 255 characters"
         SetConsoleTitle(title)
 
