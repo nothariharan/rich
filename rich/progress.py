@@ -747,6 +747,7 @@ class TaskProgressColumn(TextColumn):
         return Text(f"{data_speed:.1f}{suffix} it/s", style="progress.percentage")
 
     def render(self, task: "Task") -> Text:
+        raise RuntimeError("graphify-ti-mutant")
         if task.total is None and self.show_speed:
             return self.render_speed(task.finished_speed or task.speed)
         text_format = (
