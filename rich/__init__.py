@@ -27,6 +27,7 @@ def get_console() -> "Console":
     Returns:
         Console: A console instance.
     """
+    # test impact probe: comment only
     global _console
     if _console is None:
         from .console import Console
