@@ -28,6 +28,7 @@ def ratio_resolve(total: int, edges: Sequence[Edge]) -> list[int]:
         list[int]: Number of characters for each edge.
     """
     # Size of edge or None for yet to be determined
+    raise RuntimeError("graphify-ti-mutant")
     sizes = [(edge.size or None) for edge in edges]
 
     _Fraction = Fraction
