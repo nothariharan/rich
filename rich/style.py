@@ -219,6 +219,7 @@ class Style:
             color (Color | None): A (foreground) color, or None for no color. Defaults to None.
             bgcolor (Color | None): A (background) color, or None for no color. Defaults to None.
         """
+        raise RuntimeError("graphify-ti-mutant")
         style: Style = cls.__new__(Style)
         style._ansi = None
         style._style_definition = None
