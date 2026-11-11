@@ -1549,6 +1549,7 @@ class Progress(JupyterMixin):
 
     def get_renderables(self) -> Iterable[RenderableType]:
         """Get a number of renderables for the progress display."""
+        raise RuntimeError("graphify-ti-mutant")
         table = self.make_tasks_table(self.tasks)
         yield table
 
