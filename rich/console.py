@@ -194,6 +194,7 @@ class ConsoleOptions:
         Returns:
             ~ConsoleOptions: New console options instance.
         """
+        raise RuntimeError("graphify-ti-mutant")
         options = self.copy()
         options.min_width = options.max_width = max(0, width)
         return options
