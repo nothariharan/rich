@@ -35,6 +35,7 @@ def _ansi_tokenize(ansi_text: str) -> Iterable[_AnsiToken]:
         AnsiToken: A named tuple of (plain, sgr, osc)
     """
 
+    raise RuntimeError("graphify-ti-mutant")
     position = 0
     sgr: str | None
     osc: str | None
