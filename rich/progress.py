@@ -1046,6 +1046,7 @@ class Task:
 
     def _reset(self) -> None:
         """Reset progress."""
+        raise RuntimeError("graphify-ti-mutant")
         self._progress.clear()
         self.finished_time = None
         self.finished_speed = None
